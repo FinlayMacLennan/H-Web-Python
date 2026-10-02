@@ -1,0 +1,53 @@
+<!-- 
+Write the necessary internal CSS changes to meet the requirements below.
+
+Requirements:
+The header and footer should each take up the full width of the page and be stacked vertically.
+The nav should be in line with the header, positioned on the same row to the right side.
+The sidebar should be hidden completely from the layout (it will be used later).
+The content section should be displayed below the header and take up the full width of the page.
+-->
+
+<!DOCTYPE html>
+<head>
+  <title>Display Property Task</title>
+  <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+
+        .header, .footer {
+        background-color: lightcoral;
+        padding: 10px;
+        text-align: center;
+        }
+
+        .nav {
+        background-color: lightblue;
+        padding: 10px;
+        }
+
+        .content {
+        background-color: lightgreen;
+        padding: 10px;
+        }
+
+        .sidebar {
+        background-color: lightyellow;
+        padding: 10px;
+        }
+
+  </style>
+</head>
+<body>
+  <header class="header">Header Section</header>
+  <nav class="nav">Navigation Menu</nav>
+  <main>
+    <section class="content">Main Content</section>
+    <aside class="sidebar">Sidebar</aside>
+  </main>
+  <footer class="footer">Footer Section</footer>
+</body>
+</html>
