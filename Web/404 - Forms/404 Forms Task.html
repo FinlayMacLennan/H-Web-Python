@@ -36,7 +36,58 @@ Display error messages for invalid fields
 
         <form action="/action_page.php" method="get">
             <label for="fname">First name</label>
-            <label for="lname">Last name</label>
+            <input type="text" name="First Name" required />
+
+            <br>
+            <br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="Last Name" required />
+
+            <br>
+            <br>
+
+            <label for="n1">How old are you?</label>
+            <input type="number" min="8" max="16" step="1" name="age" pattern="\d+" required/>
+
+            <br>
+            <br>
+
+            <label for="t2">What's your e-mail address?</label>
+            <input type="email" id="t2" name="email" required />
+
+            <br>
+            <br>
+
+            <label for="t3">What's your phone number?</label>
+            <input type="num" id="t3" name="phonenum" pattern="[0-9]{4} [0-9]{3} [0-9]{4}"/>
+
+            <br>
+            <br>
+
+            <label for="t1">What's your T-shirt size<span aria-label="required">*</span></label>
+            <input type="text" id="t1" name="T-shirt size" list="l1"/>
+            <datalist id="l1">
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>X</option>
+                <option>XL</option>
+            </datalist>
+
+            <br>&nbsp;
+            <br>
+
+            <label>Previous Soccer Experience</label>
+            <br>
+            <input type="radio" name="q1" required>None<br/>
+            <input type="radio" name="q1" required>1-2 years<br/>
+            <input type="radio" name="q1" required>3+ years<br/>
+
+            <br>
+            <br>
+
+            <input type="submit">
         </form>
 
     </section>
@@ -44,8 +95,5 @@ Display error messages for invalid fields
 
 
 </main>
-
-
-
 
 </html>
