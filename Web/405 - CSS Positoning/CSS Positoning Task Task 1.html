@@ -9,6 +9,7 @@ The content section should be displayed below the header and take up the full wi
 -->
 
 <!DOCTYPE html>
+
 <head>
   <title>Display Property Task</title>
   <style>
@@ -24,9 +25,25 @@ The content section should be displayed below the header and take up the full wi
         text-align: center;
         }
 
+        div {
+            display: block;
+    
+            width: 100%;
+        }
+
+        header {
+            display: block;
+                    float: left;
+            width: 70%;
+
+        }
+
         .nav {
         background-color: lightblue;
         padding: 10px;
+        display: block;
+        float: left;
+        width: 25%;
         }
 
         .content {
@@ -41,13 +58,21 @@ The content section should be displayed below the header and take up the full wi
 
   </style>
 </head>
+
 <body>
+    <div>
   <header class="header">Header Section</header>
   <nav class="nav">Navigation Menu</nav>
+</div>
+
+  <br>
+  <br>
+
   <main>
     <section class="content">Main Content</section>
-    <aside class="sidebar">Sidebar</aside>
+    <aside class="sidebar" style="display: none;">Sidebar</aside>
   </main>
   <footer class="footer">Footer Section</footer>
 </body>
+
 </html>
