@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        #two {
+            display:none;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title> JavaScript </title>
+    <script>
+
+    function mouseclick(letter) {
+    document.getElementById(letter).style.color = "green";
+    }
+
+    function showwodden() {
+        document.getElementById("two").style.display = "block"
+        document.getElementById("one").style.display = "none"
+    }
+
+    function showcloth() {
+        document.getElementById("two").style.display = "none"
+        document.getElementById("one").style.display = "block"
+    }
+    </script>
+  </head>
+  <div id="one">
+  <img
+    class="button"
+    src="Bed 1.jpg"
+    onclick="showwodden()"
+    />
+  <h2>This is a wodden bed</h2>
+</div>
+<div id="two">
+    <img
+    class="button"
+    src="Bed 2.jpg"
+    onclick="showcloth()"
+    />
+
+  <h2>This is a cloth bed</h2>
+</div>
+  <body>
+
+  </body>
+
+</html>
