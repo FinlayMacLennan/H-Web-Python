@@ -3,6 +3,25 @@
 	<head>
 		<title>Rooms</title>
 		<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+
+		<script>
+
+		function mouseOver(overlay) {
+        document.getElementById(overlay).style.display = "none"
+        }
+
+		function mouseOut(overlay) {
+        document.getElementById(overlay).style.display = "block"
+		}
+
+		function mouseOver(overlay2) {
+        document.getElementById(overlay2).style.display = "none"
+        }
+
+		function mouseOut(overlay2) {
+        document.getElementById(overlay2).style.display = "block"
+		}
+		</script>
 	</head>
 
 	<body>
@@ -31,12 +50,12 @@
 					of a lost civilisation. Beware of hidden traps and challenges that test your wit 
 					and teamwork at every step. Solve the mysteries and escape the jungle before it 
 					swallows you whole!
-				</p>
+				</p> 
 				<br>
 				<img src="../Images/Jungle_Room.jpg" width="200px">
 			</section>
 
-			<img src="../Images/Overlay.png" class="overlay">
+			<img id="overlay" onmouseover="mouseOver('overlay')" onmouseout="mouseOut('overlay')" src="../Images/Overlay.png" class="overlay">
 		
 			<section class="roomInfo">
 				<h2>Carnival</h2>
@@ -51,7 +70,7 @@
 				<img src="../Images/Carnival_Room.jpg" width="200px">
 			</section>
 			
-			<img src="../Images/Overlay.png" class="overlay">
+			<img id="overlay2" onmouseover="mouseOver('overlay2')" onmouseout="mouseOut('overlay2')" src="../Images/Overlay.png" class="overlay">
 	
 		</main>
 		

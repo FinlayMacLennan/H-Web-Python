@@ -78,6 +78,7 @@ footer{
 
 #challengeMain{
 	text-align: center;
+	float: left;
 }
 
 #bookMain{
@@ -102,6 +103,27 @@ footer{
 	padding-left:30px;
 }
 
-.challengeLevel{
+.challengeLevelnovice{
 	background-color: #d4b483;
+	display: inline-block;
+	width: 280px;
+	border: black;
+	margin-left: 15px;
+}
+
+.challengeLevelamature{
+	background-color: #d4b483;
+	display: inline-block;
+	width: 280px;
+	border: black;
+	margin-left: 15px;
+}
+
+
+.challengeLevelexpert{
+	background-color: #d4b483;
+	display: inline-block;
+	width: 278px;
+	border: black;
+	margin: 0px 15px 0px 15px;
 }
